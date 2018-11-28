@@ -1,5 +1,5 @@
-import List from './lib/list';
-import Lecture from './lib/lecture';
+import List from './lib/list.js';
+import Lecture from './lib/lecture.js';
 import { readButton } from './lib/helpers';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const isLecturePage = page.classList.contains('lecture-page');
 
   if (isLecturePage) {
-
+    const lecture = new Lecture();
+    lecture.load();
   } else {
     const list = new List();
     list.load();

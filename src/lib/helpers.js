@@ -12,6 +12,7 @@ export function createElement(el, text) {
   return element;
 }
 
+
 // Function to activate cards and show them.
 export function showCards(value) {
   const newValue = value.toLowerCase();
@@ -53,7 +54,7 @@ export function readButton(button) {
     if (buttonCounter === 0) {
       showCards('html');
       showCards('css');
-      showCards('js');
+      showCards('javascript');
     }
   } else {
     bTarget.classList.add('button_active');
@@ -62,11 +63,11 @@ export function readButton(button) {
 
   // Check the buttons that are active and, for each inner value, hide
   // specific cards.
-  for (const button of document.querySelectorAll('.button_active')) {
-    hideCards(`${button.innerHTML}`);
+  for (const buttons of document.querySelectorAll('.button_active')) {
+    hideCards(`${buttons.innerHTML}`);
   }
 
-  for (const button of document.querySelectorAll('.button_active')) {
-    showCards(`${button.innerHTML}`);
+  for (const buttons of document.querySelectorAll('.button_active')) {
+    showCards(`${buttons.innerHTML}`);
   }
 }
