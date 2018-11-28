@@ -34,7 +34,6 @@ main { /* stylelint-disable-line */
 .header {
   display: flex;
   height: 40vh;
-  margin-bottom: 2em;
   flex-direction: column;
   background: url("../img/header.jpg") 90% 40%;
   justify-content: center;
@@ -55,6 +54,47 @@ main { /* stylelint-disable-line */
     text-align: center;
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 1200px
+}
+
+.navbuttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.buttons {
+  display: flex;
+  padding: 0 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: bold;
+  background-color: #ccc;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #999999;
+}
+
+.button.button_active {
+background-color: #2d2;
+}
+
 
 /*
 .header__container {

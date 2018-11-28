@@ -1,4 +1,4 @@
-import { empty } from './helpers';
+import { empty, createElement } from './helpers';
 import { generateImage, generateTitle } from './converter';
 
 export default class List {
@@ -24,11 +24,20 @@ export default class List {
   }
 
   renderItem(item) {
-    const titleElement = generateTitle(item.title);
-    this.container.appendChild(titleElement);
+    const card = createElement('div');
+    card.className = `card ${item.category}`;
 
     const imageElement = generateImage(item.thumnail);
     this.container.appendChild(imageElement);
+
+    const link = createElement('a');
+    const span = createElement('span');
+    link.setAttribute('href', `./fyrirlestur.html?slug=${item.slug}`);
+    link.appendChild(span);
+    card.appendChild(link);
+
+    const titleElement = generateTitle(item.title);
+    this.container.appendChild(titleElement);
   }
 
   load() {
