@@ -16,6 +16,15 @@
 }
 
 // Myndir
+.content__image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+figure {
+	width: 63vw;
+}
 
 // Tilvísun
 .content__quote {
@@ -33,6 +42,29 @@
 
 .content__quote cite {
 	text-align: left;
+	width: 63vw;
+}
+
+// Listi
+.content__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content__list ul {
+	width: 63vw;
+}
+
+// Kóði
+.content__code {
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+}
+
+.content__code xmp {
+	width: 63vw;
 }
 
 // youtube video
@@ -49,6 +81,16 @@
 	height: 19vh;
 }
 
+// Titlar
+.content__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content__heading h2 {
+	width: 63vw;
+}
 
 @media screen and (min-width: 700px) {
 	// hvað ætti að ske ?
