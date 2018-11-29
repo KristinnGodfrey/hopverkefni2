@@ -1,5 +1,13 @@
 # Hópverkefni 2
 
+## TODO: 
+* Klára README. Skipulag á JavaScript
+* Bæta við Javascript ef fyrirlestur er kláraður
+* Klára CSS fyrir fyrirlestur (Bil eru ekki rétt, ef skjárinn stækkar etc) 
+* Laga header (ef þarf ?) 
+
+
+
 ## Hvernig keyri ég ?
 Til að setja upp þennan vef þarftu að hafa nodejs. Þegar þú hefur sett það upp ætti að vera nóg að fara í rót vefsins og keyra eftirfarandi skipanir
 
