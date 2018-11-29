@@ -17,7 +17,15 @@
 // Myndir
 
 // Tilvísun
+.content__quote {
+	padding: $normal 0 $normal $normal; 
+	background-color: $gray-two; 
+	margin-bottom: $normal;
+}
 
+.content__quote p {
+	width: 65vw;
+}
 
 // youtube video
 .content__youtube {
@@ -29,6 +37,19 @@
 }
 
 .content__youtube iframe {
-	width: 60vw;
+	width: 63vw;
 	height: 19vh;
+}
+
+
+@media screen and (min-width: 700px) {
+	// hvað ætti að ske ?
+}
+
+@media screen and (min-width: 1200px) {
+	// ???
+}
+
+@media screen and (min-width: 1500px) {
+// ????
 }
