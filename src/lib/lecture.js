@@ -31,7 +31,7 @@ export default class Lecture {
   }
   
   renderItem(item) {
-    const page = document.querySelector('.page');
+    const page = document.querySelector('.fyrirlestur');
     const pageContainer = createElement('div');
     pageContainer.className = 'page__content';
     const counter = item.content.length;
@@ -46,7 +46,7 @@ export default class Lecture {
       header.style.backgroundImage = `url('./${item.image}')`;
     }
 
-    const headerContent = document.querySelector('.header__content');
+    const headerContent = document.querySelector('.header__container');
     headerContent.appendChild(createElement('p', item.category));
     headerContent.appendChild(createElement('h2', item.title));
 
@@ -57,7 +57,6 @@ export default class Lecture {
     }
 
     page.appendChild(pageContainer);
-
 
     if (store == 'finished') {
       finButton.classList.remove('hidden');
@@ -80,8 +79,9 @@ export default class Lecture {
   }
 
   load() {
+		// Hvaða fyrirlestur á að birta 
     const qs = new URLSearchParams(window.location.search);
-    const slug = qs.get('slug');
+    const slug = qs.get('slug'); 
 
     this.loadLecture(slug)
       .then(data => this.renderData(data));
