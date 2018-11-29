@@ -10,7 +10,7 @@ main { /* stylelint-disable-line */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
 }
@@ -20,7 +20,7 @@ main { /* stylelint-disable-line */
   flex-direction: column;
   justify-content: space-between;
   width: 385px;
-  background-color: #ccc;
+  background-color: $gray-three; // #CCC 
   margin: 20px 0;
   position: relative;
 }
