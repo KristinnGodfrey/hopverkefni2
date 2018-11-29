@@ -1,15 +1,8 @@
 # Hópverkefni 2
 
-## TODO: 
-* Klára README. Skipulag á JavaScript
-* Bæta við Javascript ef fyrirlestur er kláraður
-* Klára CSS fyrir fyrirlestur (Bil eru ekki rétt, ef skjárinn stækkar etc) 
-* Laga header (ef þarf ?) 
-
-
 
 ## Hvernig keyri ég ?
-Til að setja upp þennan vef þarftu að hafa nodejs. Þegar þú hefur sett það upp ætti að vera nóg að fara í rót vefsins og keyra eftirfarandi skipanir
+Til að setja upp þennan vef þarftu að hafa nodejs. Þegar þú hefur sett það upp ætti að vera nóg að fara í rót vefsins og keyra eftirfarandi skipanir:
 
 ```sh
 $ npm install
@@ -36,6 +29,6 @@ $ npm run dev
 * `styles.scss` er notað fyrir grunn stillingar og include á annað efni
 
 ## Höfundar
-* Kiddi
-* Danni
-* Teddi
+* Daníel Helgi Arnarson (dha5@hi.is)
+* Kristinn Godfrey Guðnason (kgg16@hi.is
+* Theódór Sigurjón Andrésson (tsa2@hi.is)
