@@ -8,7 +8,11 @@ $ npm install
 $ npm run dev
 ```
 
+## Skipulag vefs 
+* Test
+** Test 
+
 ## Höfundar
-Kiddi
-Danni
-Teddi
+* Kiddi
+* Danni
+* Teddi
