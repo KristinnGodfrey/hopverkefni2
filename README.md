@@ -1,5 +1,9 @@
 # Hópverkefni 2
 
+## Höfundar
+* Daníel Helgi Arnarson (dha5@hi.is)
+* Kristinn Godfrey Guðnason (kgg16@hi.is
+* Theódór Sigurjón Andrésson (tsa2@hi.is)
 
 ## Hvernig keyri ég ?
 Til að setja upp þennan vef þarftu að hafa nodejs. Þegar þú hefur sett það upp ætti að vera nóg að fara í rót vefsins og keyra eftirfarandi skipanir:
@@ -27,8 +31,3 @@ $ npm run dev
 * `index.scss` heldur utan um css fyrir forsíðu ásamt lista yfir fyrirlestra 
 * `config.scss` heldur utan um breytur eins og liti ofl. 
 * `styles.scss` er notað fyrir grunn stillingar og include á annað efni
-
-## Höfundar
-* Daníel Helgi Arnarson (dha5@hi.is)
-* Kristinn Godfrey Guðnason (kgg16@hi.is
-* Theódór Sigurjón Andrésson (tsa2@hi.is)
