@@ -1,5 +1,20 @@
 @import "config.scss";
 
+// Texti 
+.content__text {
+	display: flex;
+	flex-direction: column;
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+	line-height: 2;
+}
+
+// Myndir
+
+// Tilvísun
+
+
+// youtube video
 .content__youtube {
 	display: flex;
 	padding-top: $gutter;
@@ -7,6 +22,7 @@
 	margin-bottom: $gutter;
 	justify-content: center;
 }
+
 .content__youtube iframe {
 	width: 60vw;
 	height: 19vh;
