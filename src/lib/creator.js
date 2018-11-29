@@ -17,7 +17,7 @@ function textCreator(item) {
   div.className = 'content__text';
   const strings = item.data.split('\n');
 
-  for (let i = 0; i < strings.length; i++) {
+  for (let i = 0; i < strings.length; i++) { /* eslint-disable-line */
     const text = createElement('p', strings[i]);
     div.appendChild(text);
   }

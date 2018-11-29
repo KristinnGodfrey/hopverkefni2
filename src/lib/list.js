@@ -18,7 +18,7 @@ export default class List {
   }
 
   renderData(data) {
-    data.lectures.map((item) => {
+    data.lectures.map((item) => { /* eslint-disable-line */
       this.renderItem(item);
     });
   }

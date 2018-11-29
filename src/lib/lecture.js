@@ -41,7 +41,7 @@ export default class Lecture {
     const finButton = document.querySelector('.button__finished');
 
     const header = document.querySelector('.header');
-    if (item.image != undefined) {
+    if (item.image !== undefined) {
       header.style.backgroundImage = `url('./${item.image}')`;
     }
 
