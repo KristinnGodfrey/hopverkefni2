@@ -4,9 +4,14 @@
 .content__text {
 	display: flex;
 	flex-direction: column;
-	margin-top: $gutter;
-	margin-bottom: $gutter;
+	margin-top: $normal;
+	margin-bottom: $normal;
 	line-height: 2;
+	align-items: center;
+}
+
+.content__text p {
+	width: 63vw;
 }
 
 // Myndir
