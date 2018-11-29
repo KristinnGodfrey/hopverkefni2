@@ -1,4 +1,4 @@
-import { empty, createElement } from './helpers';
+import { createElement } from './helpers';
 import { contentCreator } from './creator';
 
 export default class Lecture {
@@ -26,18 +26,17 @@ export default class Lecture {
   }
 
   renderData(data) {
-    console.log(data);
     this.renderItem(data);
   }
-  
+
   renderItem(item) {
     const fyrirlestur = document.querySelector('.fyrirlestur');
     const fyrirlesturContent = createElement('div');
     fyrirlesturContent.className = 'fyrirlestur__content';
     const counter = item.content.length;
-    
-    var store = window.localStorage.getItem(item.slug);
-    
+
+    const store = window.localStorage.getItem(item.slug);
+
     const button = document.querySelector('.footer__button');
     const finButton = document.querySelector('.button__finished');
 
@@ -50,7 +49,7 @@ export default class Lecture {
     headerContent.appendChild(createElement('p', item.category));
     headerContent.appendChild(createElement('h2', item.title));
 
-    for (let i = 0; i < counter; i++) {
+    for (let i = 0; i < counter; i++ ) { /* eslint-disable-line */
       const type = item.content[i];
       const content = contentCreator(type);
       fyrirlesturContent.appendChild(content);
@@ -58,7 +57,7 @@ export default class Lecture {
 
     fyrirlestur.appendChild(fyrirlesturContent);
 
-    if (store == 'finished') {
+    if (store === 'finished') {
       finButton.classList.remove('hidden');
     } else {
       button.classList.remove('hidden');
@@ -66,22 +65,20 @@ export default class Lecture {
 
     button.addEventListener('click', () => {
       window.localStorage.setItem(item.slug, 'finished');
-      console.log('saved');
       button.classList.add('hidden');
       finButton.classList.remove('hidden');
     });
     finButton.addEventListener('click', () => {
       window.localStorage.removeItem(item.slug);
-      console.log(item);
       button.classList.remove('hidden');
       finButton.classList.add('hidden');
     });
   }
 
   load() {
-		// Hvaða fyrirlestur á að birta 
+    // Fyrirlestur sem á að birta
     const qs = new URLSearchParams(window.location.search);
-    const slug = qs.get('slug'); 
+    const slug = qs.get('slug');
 
     this.loadLecture(slug)
       .then(data => this.renderData(data));

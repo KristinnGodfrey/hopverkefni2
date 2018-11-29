@@ -24,30 +24,28 @@ img { /* stylelint-disable-line */
   max-width: 100%;
 }
 
-main {
-	max-width: $max-width;
+main { /* stylelint-disable-line */
+  max-width: $max-width;
 }
 
-h1 {
-	font-size: 48px;
-	font-family: $font-title;
+h1 { /* stylelint-disable-line */
+  font-family: $font-title;
+  font-size: 48px;
 }
 
-h2 {
-	font-size: 32px;
-	font-family: $font-title;
+h2 { /* stylelint-disable-line */
+  font-family: $font-title;
+  font-size: 32px;	
 }
 
-h3 {
-	font-size: 24px;
-	font-family: $font-title;
+h3 { /* stylelint-disable-line */
+  font-family: $font-title;
+  font-size: 24px;
 }
 
-
-// TODO import
+// import
 @import 'header.scss';
 @import 'buttons.scss';
 @import 'nav.scss';
 @import 'index.scss';
 @import 'fyrirlestur.scss';
-

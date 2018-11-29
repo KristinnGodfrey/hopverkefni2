@@ -1,4 +1,4 @@
-import { createElement } from './helpers.js';
+import { createElement } from './helpers';
 
 function youtubeCreator(item) {
   const div = createElement('div');
@@ -68,7 +68,7 @@ function listCreator(item) {
 
   const ul = createElement('ul');
 
-  for (let i = 0; i < item.data.length; i++) {
+  for (let i = 0; i < item.data.length; i++) { // eslint-disable-line 
     ul.appendChild(createElement('li', item.data[i]));
   }
   div.appendChild(ul);
@@ -85,6 +85,7 @@ function codeCreator(item) {
   return div;
 }
 
+/* eslint-disable */
 export function contentCreator(item) {
   if (item.type == 'youtube') {
     var div = youtubeCreator(item);
@@ -103,3 +104,4 @@ export function contentCreator(item) {
   }
   return div;
 }
+/* eslint-enable */

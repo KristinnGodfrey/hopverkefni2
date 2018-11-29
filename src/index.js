@@ -1,5 +1,5 @@
-import List from './lib/list.js';
-import Lecture from './lib/lecture.js';
+import List from './lib/list';
+import Lecture from './lib/lecture';
 import { readButton } from './lib/helpers';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     const list = new List();
     list.load();
-    const buttons = document.querySelectorAll('.button');
-    for (const button of document.querySelectorAll('.button')) {
+    // const buttons = document.querySelectorAll('.button');
+    /* eslint-disable */
+    for(const button of document.querySelectorAll('.button')) {
       button.addEventListener('click', readButton);
     }
-    console.log(buttons.length);
+    /* eslint-enable */
   }
 });

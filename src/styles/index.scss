@@ -7,47 +7,47 @@ main { /* stylelint-disable-line */
 
 .list {
   display: flex;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card {
+  position: relative;
   display: flex;
+  width: 385px;
+  margin: 20px 0;
   flex-direction: column;
   justify-content: space-between;
-  width: 385px;
-  background-color: $gray-three; // #CCC 
-  margin: 20px 0;
-  position: relative;
+  background-color: $gray-three;
 }
 
 .card__content {
   display: flex;
-	padding: 10px;
-	justify-content: space-between;
+  padding: 10px;
+  justify-content: space-between;
 }
 
 .card.card_hidden {
   display: none;
 }
 
-.card a span{
+.card a span{ //stylelint-disable-line
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
   right: 0;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .card__finished {
-	color: $green-one;
-	font-size: 3em;
-	font-weight: bold;
+  font-size: 3em;
+  font-weight: bold;
+  color: $green-one;
 }
 
 @media screen and (min-width: 1200px) {

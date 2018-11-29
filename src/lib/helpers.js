@@ -16,18 +16,21 @@ export function createElement(el, text) {
 // Function to activate cards and show them.
 export function showCards(value) {
   const newValue = value.toLowerCase();
-
+  /* eslint-disable */ /* eslint-enable */
+  /* eslint-disable */ 
   for (const card of document.querySelectorAll('.card')) {
     if (card.classList.contains(newValue)) {
       card.className = `card ${newValue}`;
     }
   }
+  /* eslint-enable */
 }
 
 // Function to hide the cards.
 export function hideCards(value) {
   const newValue = value.toLowerCase();
 
+  /* eslint-disable */
   for (const card of document.querySelectorAll('.card')) {
     if (!card.classList.contains(newValue)) {
       card.classList.add('card_hidden');
@@ -35,6 +38,7 @@ export function hideCards(value) {
       card.className = `card ${newValue}`;
     }
   }
+  /* eslint-enable */
 }
 
 // Variable to count how many buttons are active.
@@ -50,7 +54,7 @@ export function readButton(button) {
   // raise the counter and if it reaches zero activate all cards.
   if (bTarget.classList.contains('button_active')) {
     bTarget.className = 'button';
-    buttonCounter--;
+    buttonCounter--; //eslint-disable-line
     if (buttonCounter === 0) {
       showCards('html');
       showCards('css');
@@ -58,16 +62,21 @@ export function readButton(button) {
     }
   } else {
     bTarget.classList.add('button_active');
-    buttonCounter++;
+    buttonCounter++; //eslint-disable-line
   }
 
   // Check the buttons that are active and, for each inner value, hide
   // specific cards.
+
+  /* eslint-disable */
   for (const buttons of document.querySelectorAll('.button_active')) {
     hideCards(`${buttons.innerHTML}`);
   }
+  /* eslint-enable */
 
+  /* eslint-disable */
   for (const buttons of document.querySelectorAll('.button_active')) {
     showCards(`${buttons.innerHTML}`);
   }
+  /* eslint-enable */
 }

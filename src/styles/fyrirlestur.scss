@@ -128,32 +128,30 @@ footer {
 }
 
 .button__finished {
-	margin: $normal 0;
-	font-size: 1.65em;
-	color: $green-one;
-	background: none;
-	border: 0;
+  margin: $normal 0;
+  font-size: 1.65em;
+  color: $green-one;
+  background: none;
+  border: 0;
 }
 
 .footer__link {
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-// Falið 
 .hidden {
-	display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
-	.content__quote {
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	padding: $normal 0 $normal $normal;
-  	background-color: $gray-two;
-  	margin-bottom: $normal;
-  	line-height: 2;
-	}
-
+  .content__quote {
+    display: flex;
+    align-items: center;
+    padding: $normal 0 $normal $normal;
+    margin-bottom: $normal;
+    line-height: 2;
+    flex-direction: column;
+    background-color: $gray-two;
+  }
 }

@@ -29,8 +29,8 @@ export function generateTitle(title, text, slug) {
   const check = document.createElement('div');
   check.className = 'card__finished';
   const checkP = createElement('p');
-  var store = window.localStorage.getItem(slug);
-  var mark = document.createTextNode('\u2714');
+  const store = window.localStorage.getItem(slug);
+  const mark = document.createTextNode('\u2714');
   if (store != null) {
     checkP.appendChild(mark);
   }
