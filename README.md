@@ -9,8 +9,10 @@ $ npm run dev
 ```
 
 ## Skipulag vefs 
-* Test
-** Test 
+* `/dist` heldur utan um allt sem er búið til af forritum sjálfkrafa
+* `/src` heldur utan um allt sem unnið er í
+* `/src/lib` Heldur utan um Javascript kóða untan `index.js`
+ 
 
 ## Höfundar
 * Kiddi
