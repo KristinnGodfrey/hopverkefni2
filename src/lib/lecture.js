@@ -31,9 +31,9 @@ export default class Lecture {
   }
   
   renderItem(item) {
-    const page = document.querySelector('.fyrirlestur');
-    const pageContainer = createElement('div');
-    pageContainer.className = 'page__content';
+    const fyrirlestur = document.querySelector('.fyrirlestur');
+    const fyrirlesturContent = createElement('div');
+    fyrirlesturContent.className = 'fyrirlestur__content';
     const counter = item.content.length;
     
     var store = window.localStorage.getItem(item.slug);
@@ -53,10 +53,10 @@ export default class Lecture {
     for (let i = 0; i < counter; i++) {
       const type = item.content[i];
       const content = contentCreator(type);
-      pageContainer.appendChild(content);
+      fyrirlesturContent.appendChild(content);
     }
 
-    page.appendChild(pageContainer);
+    fyrirlestur.appendChild(fyrirlesturContent);
 
     if (store == 'finished') {
       finButton.classList.remove('hidden');
