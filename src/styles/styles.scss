@@ -24,138 +24,14 @@ img { /* stylelint-disable-line */
   max-width: 100%;
 }
 
+main {
+	max-width: $max-width;
+}
+
 // TODO import
+@import 'header.scss';
+@import 'buttons.scss';
+@import 'nav.scss';
+@import 'index.scss';
+@import 'fyrirlestur.scss';
 
-main { /* stylelint-disable-line */
-  max-width: $max-width;
-  margin: 0 auto;
-}
-
-.header {
-  display: flex;
-  height: 40vh;
-  flex-direction: column;
-  background: url("../img/header.jpg") 90% 40%;
-  justify-content: center;
-  align-items: center;
-
-  &__category {
-    z-index: 2;
-    font-family: $font-title;
-    font-size: 1em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__title {
-    z-index: 2;
-    font-family: $font-title;
-    font-size: 1.5em;
-    text-align: center;
-  }
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  max-width: 1200px
-}
-
-.navbuttons {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.buttons {
-  display: flex;
-  padding: 0 20px;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto Mono", "Courier New", monospace;
-  font-weight: bold;
-  background-color: #ccc;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.8rem 1.3rem;
-  font-size: 1.5rem;
-}
-
-.button:hover {
-  transition: 300ms ease-in-out;
-  background-color: #999999;
-}
-
-.button.button_active {
-background-color: #2d2;
-}
-
-.list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 385px;
-  background-color: #ccc;
-  margin: 20px 0;
-  position: relative;
-}
-
-.card_content {
-  padding: 10px;
-}
-
-.card.card_hidden {
-  display: none;
-}
-
-.card a span{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-@media screen and (min-width: 1200px) {
-  .list {
-    width: 97vw;
-  }
-}
-@media screen and (max-width: 700px) {
-  .card {
-    width: 750px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .list {
-    width: 80vw;
-  }
-}
-/*
-.header__container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 40vh;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-*/

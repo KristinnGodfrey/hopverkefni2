@@ -1,0 +1,26 @@
+.buttons {
+  display: flex;
+  padding: 0 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: bold;
+  background-color: #ccc;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #999999;
+}
+
+.button.button_active {
+background-color: #2d2;
+}
+

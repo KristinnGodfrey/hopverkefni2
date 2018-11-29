@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+  max-width: 1200px
+}
+
+.navbuttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
