@@ -1,0 +1,157 @@
+@import "config.scss";
+
+// Texti 
+.content__text {
+	display: flex;
+	flex-direction: column;
+	margin-top: $normal;
+	margin-bottom: $normal;
+	line-height: 2;
+	align-items: center;
+}
+
+.content__text p {
+	width: 63vw;
+	padding-bottom: $normal;
+}
+
+// Myndir
+.content__image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+.content__image figure {
+	width: 63vw;
+}
+
+.content__image figure > figcaption {
+	width: 100%; 
+	font-style: italic; 
+}
+
+.content__image figure > img {
+	align-right: auto;
+	align-left: auto;
+}
+
+// Tilvísun
+.content__quote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $normal 0 $normal $normal; 
+	background-color: $gray-two; 
+	margin-bottom: $normal;
+	line-height: 2;
+}
+
+.content__quote p {
+	width: 65vw;
+}
+
+.content__quote cite {
+	text-align: left;
+	width: 63vw;
+}
+
+// Listi
+.content__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 2;
+}
+
+.content__list ul {
+	width: 63vw;
+	padding: $normal 0 $normal 0;
+}
+
+// Kóði
+.content__code {
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+}
+
+.content__code xmp {
+	width: 63vw;
+}
+
+// youtube video
+.content__youtube {
+	display: flex;
+	padding-top: $gutter;
+	padding-bottom: $gutter;
+	margin-bottom: $gutter;
+	justify-content: center;
+}
+
+.content__youtube iframe {
+	width: 63vw;
+	height: 19vh;
+}
+
+// Titlar
+.content__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $double 0 $half 0;
+}
+
+.content__heading h2 {
+	width: 63vw;
+}
+
+// Footer 
+footer {
+	display: flex;
+	justify-content: center;
+	margin: $double 0;
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.65em;
+}
+
+.footer__button {
+	margin: $normal 0;
+	background: none;
+	border: 0;
+	font-size: 1.65em;
+}
+
+.button__finished {
+  margin: $normal 0;
+  font-size: 1.65em;
+  color: $green-one;
+  background: none;
+  border: 0;
+}
+
+.footer__link {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .content__quote {
+    display: flex;
+    align-items: center;
+    padding: $normal 0 $normal $normal;
+    margin-bottom: $normal;
+    line-height: 2;
+    flex-direction: column;
+    background-color: $gray-two;
+  }
+}

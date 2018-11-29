@@ -1,0 +1,18 @@
+@import 'config.scss';
+
+.navbar {
+  display: flex;
+  max-width: $max-width;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.navbuttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+}

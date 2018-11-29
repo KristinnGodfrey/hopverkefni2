@@ -1,0 +1,27 @@
+@import 'config.scss';
+
+.buttons {
+  display: flex;
+  padding-right: 20px;
+}
+
+.button {
+  display: flex;
+  padding: 0.8rem 1.3rem;
+  justify-content: center;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;  
+  background-color: $gray-three;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  background-color: $gray-one;
+  transition: $transition;
+}
+
+.button.button_active {
+  background-color: $green-one;
+}
