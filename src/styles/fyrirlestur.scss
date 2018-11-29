@@ -1,0 +1,13 @@
+@import "config.scss";
+
+.content__youtube {
+	display: flex;
+	padding-top: $gutter;
+	padding-bottom: $gutter;
+	margin-bottom: $gutter;
+	justify-content: center;
+}
+.content__youtube iframe {
+	width: 60vw;
+	height: 19vh;
+}
