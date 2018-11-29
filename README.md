@@ -5,7 +5,7 @@
 * Kristinn Godfrey Guðnason (kgg16@hi.is
 * Theódór Sigurjón Andrésson (tsa2@hi.is)
 
-## Hvernig keyri ég ?
+## Hvernig keyra skal verkefnið
 Til að setja upp þennan vef þarftu að hafa nodejs. Þegar þú hefur sett það upp ætti að vera nóg að fara í rót vefsins og keyra eftirfarandi skipanir:
 
 ```sh
