@@ -28,6 +28,22 @@ main {
 	max-width: $max-width;
 }
 
+h1 {
+	font-size: 48px;
+	font-family: $font-title;
+}
+
+h2 {
+	font-size: 32px;
+	font-family: $font-title;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: $font-title;
+}
+
+
 // TODO import
 @import 'header.scss';
 @import 'buttons.scss';

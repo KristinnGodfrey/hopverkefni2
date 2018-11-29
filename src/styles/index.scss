@@ -25,8 +25,10 @@ main { /* stylelint-disable-line */
   position: relative;
 }
 
-.card_content {
-  padding: 10px;
+.card__content {
+  display: flex;
+	padding: 10px;
+	justify-content: space-between;
 }
 
 .card.card_hidden {
@@ -40,6 +42,12 @@ main { /* stylelint-disable-line */
   top: 0;
   right: 0;
   z-index: 1;
+}
+
+.card__finished {
+	color: $green-one;
+	font-size: 3em;
+	font-weight: bold;
 }
 
 @media screen and (min-width: 1200px) {
