@@ -13,6 +13,9 @@ $ npm install
 $ npm run dev
 ```
 
+## Slóð á verkefnið keyrandi á vefnum
+https://notendur.hi.is/kgg16/vefforritun/hopverkefni2/
+
 ## Skipulag vefs 
 * `/dist` heldur utan um allt sem er búið til af forritum sjálfkrafa
 * `/src` heldur utan um allt sem unnið er í
@@ -31,3 +34,11 @@ $ npm run dev
 * `index.scss` heldur utan um css fyrir forsíðu ásamt lista yfir fyrirlestra 
 * `config.scss` heldur utan um breytur eins og liti ofl. 
 * `styles.scss` er notað fyrir grunn stillingar og include á annað efni
+
+## Myndir
+
+Myndir frá:
+
+* https://unsplash.com/photos/xekxE_VR0Ec
+* https://unsplash.com/photos/C4G18Paw0d4
+* https://unsplash.com/photos/iar-afB0QQw
