@@ -1,8 +1,10 @@
+@import "config";
+
 .header {
   display: flex;
   height: 40vh;
   flex-direction: column;
-  background: url("../img/header.jpg") 90% 40%;
+  background: url("../img/header.jpg") fixed no-repeat;
   justify-content: center;
   align-items: center;
 
