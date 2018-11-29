@@ -20,12 +20,12 @@ https://notendur.hi.is/kgg16/vefforritun/hopverkefni2/
 * `/dist` heldur utan um allt sem er búið til af forritum sjálfkrafa
 * `/src` heldur utan um allt sem unnið er í
 
-### JavaScript
+## JavaScript
 * `index.js` 
 * `/src/lib` Heldur utan um Javascript kóða untan `index.js`
 * `ÞARF AÐ BÆTA VIÐ SKIPULAG Á JAVASCRIPT` 
 
-### SASS
+## SASS
 * `/src/styles` heldur utan um allt SASS  
 * `buttons.scss` heldur utan um css fyrir takka
 * `header.scss` heldur utan um css fyrir <header>
